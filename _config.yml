@@ -1,0 +1,6 @@
+title: Reliant Freedom
+url: "https://reliantfreedom.com"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
