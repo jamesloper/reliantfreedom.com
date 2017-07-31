@@ -10,13 +10,18 @@ ul {
 	list-style: none;
 }
 a {text-decoration: none !important;}
-img, iframe {display:block;}
 
-.container {max-width:1100px; margin:0 auto;}
+img, iframe {display:block; max-width:100%;}
+
+.container {max-width:1100px; margin:0 auto; padding:0 10px;}
 .btn {border-radius:4px; display:inline-block; border: none; background-color: #fff; color: #333333; font-size:16px;}
 
-.row {display:flex; flex-direction:row; flex-wrap:wrap;}
-.row > div {flex:1;}
+@media (min-width:640px) {
+	.row {display:flex; flex-direction:row; flex-wrap:wrap;}
+	.row > div {flex:1;}
+}
+
+
 
 .section-title {margin:0 0 20px 0;}
 
@@ -29,10 +34,9 @@ header {background: #033763; padding:20px 0;}
 
 #slider {background: url("../img/slider-bg.jpg") no-repeat; background-size: cover; background-position: top center; padding: 50px 0;}
 
-#intro {padding: 50px 0; border-bottom:1px solid #ccc;}
+#intro {padding-top: 50px;}
 #intro .block h2 {line-height: 27px; margin: 0;}
 #intro .block p {color: #7B7B7B;}
-#intro .block img {padding-left: 40px; width: 100%;}
 #intro .section-title {margin-bottom: 20px;}
 #intro .section-title p {padding-top: 20px;}
 
